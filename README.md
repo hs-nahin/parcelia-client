@@ -1,16 +1,74 @@
-# React + Vite
+# Parcelia Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Frontend of Parcelia** — a modern parcel management platform with role-based workflows for real-world delivery operations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Parcelia** is a web-based B2C parcel management system designed to streamline parcel booking, tracking, and delivery operations across multiple locations. It provides dedicated workflows for merchants, administrators, and delivery agents, focusing on efficiency, transparency, and scalability in real-world logistics.
+
+This frontend project focuses on building a professional, responsive, and interactive user interface using React, Tailwind CSS, and DaisyUI. The app demonstrates real-world system workflows while remaining a portfolio-grade project.
+
+---
+
+## Features
+
+- Role-based dashboards for **Merchants**, **Admins**, and **Delivery Agents**
+- Parcel booking, tracking, and management
+- Real-time status updates and interactive UI components
+- Responsive design optimized for desktop and mobile
+- Branded and user-friendly landing page with custom theming
+- Interactive carousel using Swiper.js
+
+---
+
+## Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS + DaisyUI
+- **Interactions:** Swiper.js for carousels
+- **State Management:** React Context / Local state
+- **API Calls:** Axios or Fetch
+
+---
+
+## Project Structure
+
+```txt
+parcelia-client/
+│
+├─ public/                # Static assets: images, icons, favicon
+├─ src/
+│   ├─ assets/            # Images, logos, icons
+│   ├─ components/        # Reusable UI components
+│   │   ├─ common/
+│   │   └─ ui/
+│   ├─ pages/             # Route-based pages
+│   │   ├─ Home/
+│   │   ├─ Dashboard/
+│   │   └─ Auth/
+│   ├─ layouts/           # Layout components (MainLayout, DashboardLayout)
+│   ├─ hooks/             # Custom React hooks
+│   ├─ services/          # API calls
+│   ├─ utils/             # Helper functions
+│   ├─ routes/            # Route configuration
+│   ├─ context/           # Global state / auth
+│   ├─ App.jsx
+│   └─ main.jsx
+├─ tailwind.config.js
+├─ package.json
+└─ README.md
+```
